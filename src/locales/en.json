@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "Gross Profit Margin Calculator",
+    "description": "Calculate profit margin and sales price"
+  },
+  "calculator": {
+    "marginCalculator": {
+      "title": "Gross Profit Margin Calculator",
+      "subtitle": "Calculate Profit Margin",
+      "salesPrice": "Sales Price (Revenue)",
+      "productCost": "Product Cost (COGS)",
+      "grossProfit": "Gross Profit",
+      "profitMargin": "Profit Margin",
+      "calculate": "💡 Calculate Margin",
+      "reset": "🔄 Reset",
+      "unit": {
+        "currency": "USD",
+        "percent": "%"
+      }
+    },
+    "priceCalculator": {
+      "title": "Calculate Sales Price by Margin",
+      "subtitle": "Calculate Sales Price",
+      "targetMargin": "Target Profit Margin",
+      "productCost": "Product Cost (COGS)",
+      "suggestedPrice": "Suggested Sales Price",
+      "expectedProfit": "Expected Gross Profit",
+      "calculate": "💡 Calculate Price",
+      "reset": "🔄 Reset",
+      "unit": {
+        "currency": "USD",
+        "percent": "%"
+      }
+    }
+  },
+  "validation": {
+    "salesPriceRequired": "Sales price must be greater than 0",
+    "costNonNegative": "Cost must be non-negative",
+    "marginRange": "Profit margin must be between 0% and 100%",
+    "negativeProfitWarning": "Warning: Cost exceeds sales price, resulting in negative profit margin"
+  },
+  "concept": {
+    "title": "What is Profit Margin?",
+    "definition": "Profit margin is the percentage of gross profit relative to sales revenue, representing the difference between revenue and cost of goods sold.",
+    "purpose": "For every dollar of sales revenue, after deducting the cost of goods sold, how much money is available for period expenses and profit."
+  },
+  "formula": {
+    "margin": "Profit Margin = {(Sales Revenue - Sales Cost) / Sales Revenue} × 100%",
+    "price": "Sales Price = Cost ÷ (1 - Profit Margin ÷ 100)"
+  },
+  "language": {
+    "switch": "Switch Language",
+    "en": "English",
+    "zh": "繁體中文"
+  }
+}
