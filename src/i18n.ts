@@ -3,14 +3,14 @@ import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
 import enTranslation from './locales/en.json'
-import zhTWTranslation from './locales/zh-TW.json'
+import zhCNTranslation from './locales/zh-CN.json'
 
 const resources = {
   en: {
     translation: enTranslation,
   },
-  'zh-TW': {
-    translation: zhTWTranslation,
+  'zh-CN': {
+    translation: zhCNTranslation,
   },
 }
 

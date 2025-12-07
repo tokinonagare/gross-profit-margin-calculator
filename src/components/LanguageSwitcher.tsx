@@ -6,7 +6,7 @@ export function LanguageSwitcher() {
   const toggleLanguage = () => {
     const currentLang = i18n.language
     const isEnglish = currentLang === 'en' || currentLang.startsWith('en-')
-    const newLang = isEnglish ? 'zh-TW' : 'en'
+    const newLang = isEnglish ? 'zh-CN' : 'en'
     i18n.changeLanguage(newLang)
   }
 
@@ -19,7 +19,7 @@ export function LanguageSwitcher() {
       className="px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm hover:scale-105 font-medium"
       aria-label={t('language.switch')}
     >
-      🌐 {isEnglish ? '繁體中文' : 'English'}
+      🌐 {isEnglish ? '简体中文' : 'English'}
     </button>
   )
 }

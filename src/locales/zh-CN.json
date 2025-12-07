@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "毛利率计算机",
+    "description": "计算毛利率与销售价格"
+  },
+  "calculator": {
+    "marginCalculator": {
+      "title": "毛利率计算机",
+      "subtitle": "计算毛利率",
+      "salesPrice": "销售价格（销货收入）",
+      "productCost": "产品成本（销货成本）",
+      "grossProfit": "毛利额",
+      "profitMargin": "毛利率",
+      "calculate": "💡 计算毛利率",
+      "reset": "🔄 清除重置",
+      "unit": {
+        "currency": "PHP",
+        "percent": "%"
+      }
+    },
+    "priceCalculator": {
+      "title": "以毛利率计算销售价格",
+      "subtitle": "计算销售价格",
+      "targetMargin": "目标毛利率",
+      "productCost": "产品成本（销货成本）",
+      "suggestedPrice": "建议销售价格",
+      "expectedProfit": "预期毛利额",
+      "calculate": "💡 计算销售价格",
+      "reset": "🔄 清除重置",
+      "unit": {
+        "currency": "PHP",
+        "percent": "%"
+      }
+    }
+  },
+  "validation": {
+    "salesPriceRequired": "销售价格必须大于 0",
+    "costNonNegative": "成本必须为非负数",
+    "marginRange": "毛利率必须在 0% 至 100% 之间",
+    "negativeProfitWarning": "警告：成本超过销售价格，将产生负毛利率"
+  },
+  "concept": {
+    "title": "什么是毛利率？",
+    "definition": "毛利率是毛利占销售收入的百分比，毛利为收入与成本差额。",
+    "purpose": "每一元销售收入扣除销售成本后，有多少钱可用于期间费用和盈利。"
+  },
+  "formula": {
+    "margin": "销售毛利率 = {（销售收入 - 销售成本）/ 销售收入} × 100%",
+    "price": "销售价格 = 成本 ÷ (1 - 毛利率 ÷ 100)"
+  },
+  "language": {
+    "switch": "切换语言",
+    "en": "English",
+    "zh": "简体中文"
+  }
+}
