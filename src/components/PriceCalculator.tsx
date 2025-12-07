@@ -104,10 +104,10 @@ export function PriceCalculator() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <div className="text-sm text-gray-700 mb-1 font-medium">
-                💰 {t('calculator.priceCalculator.suggestedPrice')}
+                💵 {t('calculator.priceCalculator.expectedProfit')}
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-green-600">
-                {result.suggestedPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{' '}
+              <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
+                {result.expectedProfit.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{' '}
                 <span className="text-lg text-gray-600">
                   {t('calculator.priceCalculator.unit.currency')}
                 </span>
@@ -115,10 +115,10 @@ export function PriceCalculator() {
             </div>
             <div>
               <div className="text-sm text-gray-700 mb-1 font-medium">
-                💵 {t('calculator.priceCalculator.expectedProfit')}
+                💰 {t('calculator.priceCalculator.suggestedPrice')}
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
-                {result.expectedProfit.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{' '}
+              <div className="text-2xl md:text-3xl font-bold text-green-600">
+                {result.suggestedPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{' '}
                 <span className="text-lg text-gray-600">
                   {t('calculator.priceCalculator.unit.currency')}
                 </span>
