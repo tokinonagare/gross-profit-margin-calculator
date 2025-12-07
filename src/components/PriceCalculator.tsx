@@ -30,8 +30,8 @@ export function PriceCalculator() {
     const expectedProfit = suggestedPrice - productCost
 
     setResult({
-      suggestedPrice: Math.round(suggestedPrice),
-      expectedProfit: Math.round(expectedProfit),
+      suggestedPrice,
+      expectedProfit,
     })
   }
 
@@ -107,7 +107,7 @@ export function PriceCalculator() {
                 💰 {t('calculator.priceCalculator.suggestedPrice')}
               </div>
               <div className="text-2xl md:text-3xl font-bold text-green-600">
-                {result.suggestedPrice}{' '}
+                {result.suggestedPrice.toFixed(2)}{' '}
                 <span className="text-lg text-gray-600">
                   {t('calculator.priceCalculator.unit.currency')}
                 </span>
@@ -118,7 +118,7 @@ export function PriceCalculator() {
                 💵 {t('calculator.priceCalculator.expectedProfit')}
               </div>
               <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
-                {result.expectedProfit}{' '}
+                {result.expectedProfit.toFixed(2)}{' '}
                 <span className="text-lg text-gray-600">
                   {t('calculator.priceCalculator.unit.currency')}
                 </span>
