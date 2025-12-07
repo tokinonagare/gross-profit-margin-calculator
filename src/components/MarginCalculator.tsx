@@ -110,7 +110,7 @@ export function MarginCalculator() {
                 💵 {t('calculator.marginCalculator.grossProfit')}
               </div>
               <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
-                {result.grossProfit.toFixed(2)}{' '}
+                {result.grossProfit.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{' '}
                 <span className="text-lg text-gray-600">
                   {t('calculator.marginCalculator.unit.currency')}
                 </span>
