@@ -14,7 +14,7 @@
       "calculate": "💡 計算毛利率",
       "reset": "🔄 清除重置",
       "unit": {
-        "currency": "元",
+        "currency": "PHP",
         "percent": "%"
       }
     },
@@ -28,7 +28,7 @@
       "calculate": "💡 計算銷售價格",
       "reset": "🔄 清除重置",
       "unit": {
-        "currency": "元",
+        "currency": "PHP",
         "percent": "%"
       }
     }

@@ -43,14 +43,14 @@ export function PriceCalculator() {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.1)] p-6 md:p-8 transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#f5576c]">
+    <div className="bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.1)] p-8 md:p-12 transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
+      <h2 className="text-2xl font-bold text-gray-800 mb-8 pb-3 border-b-2 border-[#f5576c] text-center">
         💡 {t('calculator.priceCalculator.title')}
       </h2>
 
-      <div className="space-y-4 mb-6">
+      <div className="space-y-5 mb-6">
         <div>
-          <label className="block text-sm font-medium text-[#374151] mb-2">
+          <label className="block text-sm font-medium text-[#374151] mb-3">
             {t('calculator.priceCalculator.targetMargin')}
           </label>
           <div className="relative">
@@ -71,7 +71,7 @@ export function PriceCalculator() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-[#374151] mb-2">
+          <label className="block text-sm font-medium text-[#374151] mb-3">
             {t('calculator.priceCalculator.productCost')}
           </label>
           <div className="relative">

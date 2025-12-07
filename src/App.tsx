@@ -20,21 +20,23 @@ function App() {
         </div>
       </header>
 
-      <main className="max-w-[800px] mx-auto px-6 md:px-10 py-8 md:py-12">
-        <div className="space-y-6 md:space-y-8">
-          <MarginCalculator />
-          <PriceCalculator />
-        </div>
+      <main className="flex justify-center py-8 md:py-12 px-6 md:px-10">
+        <div className="w-full max-w-[800px]">
+          <div className="space-y-6 md:space-y-8">
+            <MarginCalculator />
+            <PriceCalculator />
+          </div>
 
-        <div className="mt-8">
-          <div className="bg-white rounded-2xl shadow-lg p-6">
-            <h3 className="text-xl font-bold mb-3 text-gray-800 border-b-2 border-[#f5576c] pb-2">
-              📚 {t('concept.title')}
-            </h3>
-            <p className="mb-2 text-gray-700">
-              <strong>{t('concept.definition')}</strong>
-            </p>
-            <p className="text-gray-600">{t('concept.purpose')}</p>
+          <div className="mt-8">
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h3 className="text-xl font-bold mb-3 text-gray-800 border-b-2 border-[#f5576c] pb-2 text-center">
+                📚 {t('concept.title')}
+              </h3>
+              <p className="mb-2 text-gray-700">
+                <strong>{t('concept.definition')}</strong>
+              </p>
+              <p className="text-gray-600">{t('concept.purpose')}</p>
+            </div>
           </div>
         </div>
       </main>

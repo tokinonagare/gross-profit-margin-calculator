@@ -14,7 +14,7 @@
       "calculate": "💡 Calculate Margin",
       "reset": "🔄 Reset",
       "unit": {
-        "currency": "USD",
+        "currency": "PHP",
         "percent": "%"
       }
     },
@@ -28,7 +28,7 @@
       "calculate": "💡 Calculate Price",
       "reset": "🔄 Reset",
       "unit": {
-        "currency": "USD",
+        "currency": "PHP",
         "percent": "%"
       }
     }
