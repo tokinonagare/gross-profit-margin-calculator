@@ -47,9 +47,9 @@ export function MarginCalculator() {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-        {t('calculator.marginCalculator.title')}
+    <div className="bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.1)] p-6 md:p-8 transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
+      <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#f5576c]">
+        📊 {t('calculator.marginCalculator.title')}
       </h2>
 
       <div className="space-y-4 mb-6">
@@ -62,19 +62,19 @@ export function MarginCalculator() {
               type="number"
               value={salesPrice}
               onChange={(e) => setSalesPrice(e.target.value)}
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:border-[#f5576c] focus:outline-none focus:ring-2 focus:ring-[#f5576c]/20 hover:border-gray-400 transition-all duration-300"
               placeholder="0"
               min="0"
               step="0.01"
             />
-            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm">
               {t('calculator.marginCalculator.unit.currency')}
             </span>
           </div>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium text-[#374151] mb-2">
             {t('calculator.marginCalculator.productCost')}
           </label>
           <div className="relative">
@@ -82,12 +82,12 @@ export function MarginCalculator() {
               type="number"
               value={cost}
               onChange={(e) => setCost(e.target.value)}
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:border-[#f5576c] focus:outline-none focus:ring-2 focus:ring-[#f5576c]/20 hover:border-gray-400 transition-all duration-300"
               placeholder="0"
               min="0"
               step="0.01"
             />
-            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm">
               {t('calculator.marginCalculator.unit.currency')}
             </span>
           </div>
@@ -101,24 +101,28 @@ export function MarginCalculator() {
       )}
 
       {result && (
-        <div className="mb-6 p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg">
+        <div className="mb-6 p-5 bg-gradient-to-r from-[#fef3c7] to-[#fde68a] rounded-xl border border-yellow-300">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <div className="text-sm text-gray-600 mb-1">
-                {t('calculator.marginCalculator.grossProfit')}
+              <div className="text-sm text-gray-700 mb-1 font-medium">
+                💵 {t('calculator.marginCalculator.grossProfit')}
               </div>
-              <div className="text-2xl font-bold text-purple-600">
+              <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
                 {result.grossProfit.toFixed(2)}{' '}
-                {t('calculator.marginCalculator.unit.currency')}
+                <span className="text-lg text-gray-600">
+                  {t('calculator.marginCalculator.unit.currency')}
+                </span>
               </div>
             </div>
             <div>
-              <div className="text-sm text-gray-600 mb-1">
-                {t('calculator.marginCalculator.profitMargin')}
+              <div className="text-sm text-gray-700 mb-1 font-medium">
+                📈 {t('calculator.marginCalculator.profitMargin')}
               </div>
-              <div className="text-2xl font-bold text-pink-600">
+              <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
                 {result.profitMargin.toFixed(2)}{' '}
-                {t('calculator.marginCalculator.unit.percent')}
+                <span className="text-lg text-gray-600">
+                  {t('calculator.marginCalculator.unit.percent')}
+                </span>
               </div>
             </div>
           </div>
@@ -128,23 +132,23 @@ export function MarginCalculator() {
       <div className="flex gap-3">
         <button
           onClick={calculate}
-          className="flex-1 bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-200 shadow-md hover:shadow-lg"
+          className="flex-1 bg-gradient-to-r from-[#f093fb] to-[#f5576c] text-white py-3 px-6 rounded-lg font-semibold hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(245,87,108,0.4)] transition-all duration-300 shadow-md"
         >
           {t('calculator.marginCalculator.calculate')}
         </button>
         <button
           onClick={reset}
-          className="flex-1 bg-gray-200 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-200"
+          className="flex-1 bg-[#f3f4f6] text-[#374151] py-3 px-6 rounded-lg font-semibold hover:bg-[#e5e7eb] transition-all duration-300"
         >
           {t('calculator.marginCalculator.reset')}
         </button>
       </div>
 
-      <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-        <div className="text-sm font-medium text-blue-900 mb-1">
-          {t('concept.title')}
+      <div className="mt-6 p-4 bg-gradient-to-r from-[#dcfce7] to-[#bbf7d0] rounded-xl border border-green-300">
+        <div className="text-sm font-semibold text-gray-800 mb-2">
+          📐 {t('concept.title')}
         </div>
-        <div className="text-sm text-blue-700">
+        <div className="text-sm text-gray-700 font-mono">
           {t('formula.margin')}
         </div>
       </div>
