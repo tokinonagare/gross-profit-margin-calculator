@@ -143,15 +143,6 @@ export function MarginCalculator() {
           {t('calculator.marginCalculator.reset')}
         </button>
       </div>
-
-      <div className="mt-6 p-4 bg-gradient-to-r from-[#dcfce7] to-[#bbf7d0] rounded-xl border border-green-300">
-        <div className="text-sm font-semibold text-gray-800 mb-2">
-          📐 {t('concept.title')}
-        </div>
-        <div className="text-sm text-gray-700 font-mono">
-          {t('formula.margin')}
-        </div>
-      </div>
     </div>
   )
 }
