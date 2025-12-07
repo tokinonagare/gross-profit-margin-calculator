@@ -45,6 +45,7 @@
     "purpose": "For every dollar of sales revenue, after deducting the cost of goods sold, how much money is available for period expenses and profit."
   },
   "formula": {
+    "title": "Formula",
     "margin": "Profit Margin = {(Sales Revenue - Sales Cost) / Sales Revenue} × 100%",
     "price": "Sales Price = Cost ÷ (1 - Profit Margin ÷ 100)"
   },
