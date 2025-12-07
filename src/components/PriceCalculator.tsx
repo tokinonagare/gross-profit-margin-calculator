@@ -56,6 +56,7 @@ export function PriceCalculator() {
           <div className="relative">
             <input
               type="number"
+              inputMode="decimal"
               value={targetMargin}
               onChange={(e) => setTargetMargin(e.target.value)}
               className="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:border-[#f5576c] focus:outline-none focus:ring-2 focus:ring-[#f5576c]/20 hover:border-gray-400 transition-all duration-300"
@@ -77,6 +78,7 @@ export function PriceCalculator() {
           <div className="relative">
             <input
               type="number"
+              inputMode="decimal"
               value={cost}
               onChange={(e) => setCost(e.target.value)}
               className="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:border-[#f5576c] focus:outline-none focus:ring-2 focus:ring-[#f5576c]/20 hover:border-gray-400 transition-all duration-300"
