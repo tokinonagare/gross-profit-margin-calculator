@@ -8,16 +8,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#2e2e2e] to-[#e0e0e0]">
-      <header className="bg-gradient-to-r from-[#ec4899] to-[#8b5cf6] shadow-md sticky top-0 z-50">
-        <div className="max-w-[800px] mx-auto px-6 md:px-10 py-6">
-          <div className="flex justify-between items-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-white">
-              💰 {t('app.title')}
-            </h1>
-            <LanguageSwitcher />
-          </div>
-          <p className="text-white/90 mt-2 text-sm md:text-base">{t('app.description')}</p>
-        </div>
+      <header className="flex justify-end bg-gradient-to-r py-1 px-10 from-[#ec4899] to-[#8b5cf6] shadow-md sticky top-0 z-50">
+        <LanguageSwitcher />
       </header>
 
       <main className="flex justify-center py-8 md:py-12 px-6 md:px-10">

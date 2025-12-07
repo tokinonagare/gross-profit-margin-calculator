@@ -16,10 +16,10 @@ export function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className="px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm hover:scale-105 font-medium"
+      className="px-4 py-1 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm hover:scale-105 font-medium"
       aria-label={t('language.switch')}
     >
-      🌐 {isEnglish ? '简体中文' : 'English'}
+      🌐 {isEnglish ? '中文' : 'En'}
     </button>
   )
 }
