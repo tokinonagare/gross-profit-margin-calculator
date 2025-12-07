@@ -106,7 +106,7 @@ export function PriceCalculator() {
               <div className="text-sm text-gray-700 mb-1 font-medium">
                 💰 {t('calculator.priceCalculator.suggestedPrice')}
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-[#f5576c]">
+              <div className="text-2xl md:text-3xl font-bold text-green-600">
                 {result.suggestedPrice}{' '}
                 <span className="text-lg text-gray-600">
                   {t('calculator.priceCalculator.unit.currency')}
